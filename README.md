@@ -24,7 +24,7 @@
 
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/g-horakhty/Navegador-Lua
    ```
 2. Instale as dependências:
    ```sh
