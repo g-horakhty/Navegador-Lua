@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 
+
+Copyright (C) Gabriel Horakhty	
+
+This file is part of Navegador Lua (Em desenvolvimento).
+
+Navegador Lua (Em desenvolvimento) is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Navegador Lua (Em desenvolvimento) is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Navegador Lua (Em desenvolvimento).  If not, see <http://www.gnu.org/licenses/>.
+
+Author: Gabriel Horakhty
+
+-->
+<interface>
+  <requires lib="gtk+" version="3.2"/>
+  <!-- interface-license-type gplv3 -->
+  <!-- interface-name Navegador Lua (Em desenvolvimento) -->
+  <!-- interface-description Ainda em fase inicial, n\303\243o temos definido uma filosofia, mas queremos ser feito para a comunidade e acess\303\255vel a Hardware modesto. -->
+  <!-- interface-copyright Gabriel Horakhty\t -->
+  <!-- interface-authors Gabriel Horakhty -->
+  <template class="janela_principal" parent="GtkWindow">
+    <property name="can-focus">False</property>
+    <property name="title">Navegador</property>
+    <property name="default-width">800</property>
+    <property name="default-height">600</property>
+    <child>
+      <object class="GtkBox" id="box_principal">
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkBox" id="box_toolbar">
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkToolButton" id="botao_voltar">
+                <property name="can-focus">False</property>
+                <property name="icon-name">go-previous</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolButton" id="botao_avancar">
+                <property name="can-focus">False</property>
+                <property name="icon-name">go-next</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolButton" id="botao_recarregar">
+                <property name="can-focus">False</property>
+                <property name="icon-name">view-refresh</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="barra_endereco">
+                <property name="can-focus">False</property>
+                <property name="hexpand">True</property>
+                <property name="placeholder-text">Digite a URL</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="botao_download">
+                <property name="can-focus">False</property>
+                <property name="receives-default">False</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="area_navegador">
+            <property name="can-focus">False</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
