@@ -30,6 +30,9 @@
    ```sh
    sudo apt install webkit2gtk-4.0 glade gcc make
    ```
+# ATENÇÂO: Ainda que se use o .AppImage é necessário instalar o WebKit pois o código precisa criar um processo (WebKitNetworkProcess) e faz parte do WebKitGTK!
+# Para Instalar no Debian/Derivados se compatível: **sudo apt install libwebkit2gtk-4.0-37**
+
 # Ainda não está definido qual linguagem será usada no navegador mas a inspiração está no Midori-Browser 9.0
 
 ### 📫 Contato
