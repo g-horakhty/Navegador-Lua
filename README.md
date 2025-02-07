@@ -28,7 +28,7 @@
    ```
 2. Instale as dependências:
    ```sh
-   sudo apt install webkit2gtk-4.0 glade gcc make
+   sudo apt install webkit2gtk-4.0 glade build-essential
    ```
 # ATENÇÃO: Ainda que se use o .AppImage é necessário instalar o WebKit pois o código precisa criar um processo (WebKitNetworkProcess) e faz parte do WebKitGTK!
 # Para Instalar no Debian/Derivados se compatível: 
